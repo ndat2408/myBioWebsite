@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* block user */
+
+body{
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(70deg, #614385, #516395);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.img{
+    width: 110px;
+    height: 110px;
+    background-image: url(./img/avt.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+
+.txt .name h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+        
+.txt .intro p{
+    text-align: center;
+    line-height: 22px;
+}
+
+.bar{
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-image: linear-gradient(to right, transparent, rgb(255,255,255), transparent);
+}
+
+.btnlink{
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.btnlink:hover{
+    color: black;
+    background-color: white;
+}
+
+.btnlink:focus{
+    box-shadow: 0 0 0  3px rgba(233, 233, 233, 0.719);
+}
+
+@media only screen and (max-width: 739px){
+    .main{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+}
+
+    .txt .name h1{
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    .main{
+        width: 75%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+}
+
+    .txt .name h1{
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .main{
+            width: 60%;
+            margin: 0 auto;
+            padding-bottom: 5px;
+    }
+
+    .txt .name h1{
+        line-height: 45px;
+    }
+}
